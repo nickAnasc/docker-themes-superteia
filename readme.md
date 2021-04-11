@@ -20,20 +20,20 @@ Crie uma pasta com o nome do projeto, e **extraia** o zip dentro dela:
 Dentro da pasta **[docker-compose]**, abra o terminal e digite os seguintes comandos:
 
 ```sh
-docker-compose up -d                                                                    ## Instalando as dependências, o Opencode da tray e subindo o Container no Docker
+docker-compose up -d            ## Instalando as dependências, o Opencode da tray e subindo o Container no Docker
 ```
 
 ```sh
-docker exec -it opencode /bin/bash                                                      ## Habilitará a execução dos comandos do Opencode
+docker exec -it opencode /bin/bash            ## Habilitará a execução dos comandos do Opencode
 ```
 
 **Para Testar os comandos do Opencode:**
 ```sh
-opencode help                                                                           ## Exibirá todos os comandos do Opencode.
+opencode help            ## Exibirá todos os comandos do Opencode.
 ```
 
 ```sh
-opencode configure [Key] [password] [id-theme]                                          ## Configurando acesso ao tema.
+opencode configure [Key] [password] [id-theme]            ## Configurando acesso ao tema.
 ```
 Para acessar a **Key** e o **Password** basta acessar no painel: **"Minha loja / Design da Loja"** e clicar na seta ao lado do botão "**Explorar loja de temas**", "**Lista de desenvolvedores**". Ao adicionar um desenvolvedor, será gerado a **Key** e o **Password**, credenciais necessárias para baixar o projeto localmente.
 
@@ -46,12 +46,12 @@ opencode download
 ```
 **Após baixar o projeto:**
 ```sh
-opencode watch                                                                          ## Este comando nos permitirá assistir todas as mudanças ao dar ctrl + S no código.
+opencode watch            ## Este comando nos permitirá assistir todas as mudanças ao dar ctrl + S no código.
 ```
 
 **Subir um arquivo**
 ```sh
-opencode upload [pasta]/[nome-arquivo.extensão]                                         ## Este comando nos permitirá subir um arquivo.
+opencode upload [pasta]/[nome-arquivo.extensão]            ## Este comando nos permitirá subir um arquivo.
 ```
 **Exemplos de upload de arquivos**
 ```sh
@@ -64,7 +64,7 @@ opencode upload js/main.min.js
 
 **Subir um Projeto**
 ```sh
-opencode upload                                                                         ## Este comando, sem especificar um arquivo, irá subir o projeto inteiro.
+opencode upload            ## Este comando, sem especificar um arquivo, irá subir o projeto inteiro.
 ```
 
 
